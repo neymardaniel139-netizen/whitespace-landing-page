@@ -7,7 +7,7 @@
   --brand-background: #043873;
   --button-color: #4f9cf9;
 }
-header {
+body {
   background-color: var(--brand-background);
 }
 nav {
@@ -34,9 +34,7 @@ p {
   gap: 7px;
 }
 .hero {
-  width: 320px;
   height: 813px;
-  background-color: var(--brand-background);
   background-image: url(./public/images/Element.png);
 }
 .hero-heading {
