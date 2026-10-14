@@ -6,8 +6,8 @@
 :root {
   --brand-background: #043873;
   --button-color: #4f9cf9;
-  --white-space: #C4DEFD;
-  --secondary-white-space: #B4B4B4;
+  --white-space: #ffffff;
+  --secondary-white-space: #b4b4b4;
 }
 body {
   background-color: var(--brand-background);
@@ -21,7 +21,7 @@ nav {
   align-items: center;
 }
 h1 {
-  font-size: 20px;
+  font-size: 36px;
   color: white;
   line-height: 100%;
   font-family: "Inter", sans-serif;
@@ -29,10 +29,19 @@ h1 {
 p {
   color: white;
   font-family: "Inter", sans-serif;
+  font-weight: 100;
+  line-height: 30px;
+  margin-top: 24px;
 }
-nav{
+nav {
   padding: 0 10px 0 0;
   margin-top: 10px;
+}
+button {
+  background-color: var(--button-color);
+  color: white;
+  margin-top: 40px;
+  font-size: 14px;
 }
 .logo {
   display: flex;
@@ -40,7 +49,7 @@ nav{
   gap: 7px;
 }
 .hero {
-  height: 813px;
+  height: 720px;
   background-image: url(./public/images/Element.png);
 }
 .hero-heading {
@@ -79,21 +88,146 @@ nav{
   font-size: 17px;
 }
 .imgboxx {
-  width: 286px;
+  width: 295px;
   height: 191px;
 }
 .img {
-  width: 286px;
+  width: 297px;
   height: 191px;
-  margin-top: 170px;
-  border: 1px solid;
+  margin-top: 90px;
+  position: absolute;
+  right: 10px;
 }
-.hero-next{
-  height: 813px;
-  background-color: var(--secondary-white-space);
+.hero-next {
+  height: 1586px;
+  background-color: var(--white-space);
   background-image: url(./public/images/Element.png);
+  padding: 80px 16px;
 }
-.proj{
+.advert {
+  text-align: center;
+}
+.proj {
   font-size: 36px;
   color: black;
+  font-weight: 700;
+}
+.proje {
+  color: black;
+  padding-top: 24px;
+  font-weight: 400;
+}
+.start {
+  width: 200px;
+  height: 70px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  background-color: var(--button-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+.huh {
+  width: 286px;
+  height: 177px;
+  margin-top: 60px;
+}
+.coo {
+  text-align: center;
+}
+.work {
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+.support {
+  color: black;
+  margin-top: 24px;
+  line-height: 30px;
+}
+.tyr {
+  width: 185px;
+  height: 70px;
+  border-radius: 8px;
+  background-color: var(--button-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+.circle {
+  position: absolute;
+  top: 2000px;
+}
+.third {
+  height: 690px;
+  background-color: var(--brand-background);
+  background-image: url(./public/images/Element.png);
+}
+.use {
+  text-align: center;
+  margin-top: 60px;
+}
+.go {
+  width: 170px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-left: 75px;
+  border-radius: 8px;
+  padding: 20px 40px;
+}
+.nodiv {
+  width: 284px;
+  height: 198px;
+  position: absolute;
+  top: 2850px;
+  left: 15px;
+}
+.fourth {
+  height: 860px;
+  background-color: var(--white-space);
+  background-image: url(./public/images/Element.png);
+}
+.outsider {
+  width: 288px;
+  height: 198px;
+  position: absolute;
+  top: 3240px;
+  left: 15px;
+}
+.pluggins {
+  position: relative;
+  top: 375px;
+  text-align: center;
+}
+.pluggins h1 {
+  color: black;
+}
+.pluggins p {
+  color: black;
+  line-height: 23px;
+}
+.goes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-left: 75px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  position: relative;
+  top: 420px;
 }
