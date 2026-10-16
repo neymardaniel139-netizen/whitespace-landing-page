@@ -3,63 +3,77 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --brand-background: #043873;
   --button-color: #4f9cf9;
-  --white-space: #ffffff;
+  --white: #ffffff;
   --secondary-white-space: #b4b4b4;
 }
+
 body {
   background-color: var(--brand-background);
+  font-family: "Inter", sans-serif;
 }
-nav {
-  /* width: 320px;
-  height: 52px; */
-  min-width: 320px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
+/* Global Start */
+
 h1 {
   font-size: 36px;
-  color: white;
+  color: var(--white);
   line-height: 100%;
-  font-family: "Inter", sans-serif;
 }
+
 p {
-  color: white;
-  font-family: "Inter", sans-serif;
+  color: var(--white);
   font-weight: 100;
   line-height: 30px;
   margin-top: 24px;
 }
-nav {
-  padding: 0 10px 0 0;
-  margin-top: 10px;
-}
+
 button {
   background-color: var(--button-color);
   color: white;
   margin-top: 40px;
   font-size: 14px;
 }
+
+/* Global End */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: var(--brand-background);
+}
+
 .logo {
   display: flex;
-  padding: 10px;
-  gap: 7px;
+  align-items: center;
+  gap: 10px;
 }
+
+.logo h1 {
+  font-size: 19.64px;
+}
+
 .hero {
   height: 720px;
   background-image: url(./public/images/Element.png);
+  background-repeat: no-repeat;
 }
+
 .hero-heading {
   padding: 50px 20px;
+  text-align: center;
 }
+
 .come {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
 }
+
 .in {
   font-size: 17px;
   font-weight: 400;
@@ -67,167 +81,282 @@ button {
   margin-top: 30px;
   text-align: center;
 }
-.but {
+
+.hero-button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.button {
-  background-color: var(--button-color);
-  width: 232px;
-  height: 70px;
-  border-radius: 8px;
-  padding: 20px 40px;
-  margin-top: 60px;
-  margin-right: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3px;
-  color: white;
-  font-size: 17px;
-}
-.imgboxx {
-  width: 295px;
-  height: 191px;
-}
-.img {
-  width: 297px;
-  height: 191px;
-  margin-top: 90px;
-  position: absolute;
-  right: 10px;
-}
-.hero-next {
-  height: 1586px;
-  background-color: var(--white-space);
-  background-image: url(./public/images/Element.png);
-  padding: 80px 16px;
-}
-.advert {
-  text-align: center;
-}
-.proj {
-  font-size: 36px;
-  color: black;
-  font-weight: 700;
-}
-.proje {
-  color: black;
-  padding-top: 24px;
-  font-weight: 400;
-}
-.start {
-  width: 200px;
-  height: 70px;
-  border-radius: 8px;
-  padding: 20px 40px;
-  background-color: var(--button-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-  margin-left: 50px;
-  margin-top: 60px;
-}
-.huh {
-  width: 286px;
-  height: 177px;
-  margin-top: 60px;
-}
-.coo {
-  text-align: center;
-}
-.work {
-  color: black;
-  font-size: 36px;
-  font-weight: bold;
-  margin-top: 60px;
-}
-.support {
-  color: black;
-  margin-top: 24px;
-  line-height: 30px;
-}
-.tyr {
   width: 185px;
   height: 70px;
   border-radius: 8px;
-  background-color: var(--button-color);
+  margin: 60px auto 0;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 286px;
+  height: 191px;
+  display: block;
+  margin: 40px 0 0;
+}
+
+.imgbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* END HERO STYLE */
+
+/* BEGINING OF MANAGMENT STYLE */
+
+.management {
+  background-color: var(--white);
+  background-image: url(./public/images/Element.png);
+  background-repeat: no-repeat;
+  height: 1586px;
+  padding: 80px 16px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.management h1 {
+  color: black;
+}
+
+.management p {
+  color: black;
+}
+
+.management-btn {
+  width: 200px;
+  height: 70px;
+  border-radius: 8px;
+  margin: 60px auto 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   gap: 10px;
-  margin-left: 50px;
-  margin-top: 60px;
 }
-.circle {
-  position: absolute;
-  top: 2000px;
+
+.management-image {
+  width: 288px;
+  height: 215px;
+  margin: 40px auto 0;
 }
-.third {
-  height: 690px;
-  background-color: var(--brand-background);
-  background-image: url(./public/images/Element.png);
+
+/* END OF MANAGEMENT STYLE  */
+
+/* BEGINNING OF CO-OPERATION STYLE */
+
+.cooperation {
+  width: 100%;
+  min-height: 70px;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  text-align: center;
+  margin: 60px auto 0;
+  position: relative;
+  z-index: 1;
 }
-.use {
+
+.co-button {
+  width: 185px;
+  height: 70px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  margin: 60px auto 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.co-image {
+  width: 279px;
+  height: 260px;
+  margin: 40px auto 0;
+}
+/* END OF CO-OPERATION STYLE */
+
+/* BEGINNING EXTENSIONS STYLE*/
+.extension {
+  width: 100%;
+  height: 810px;
+  display: flex;
+  flex-direction: column;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 32px;
+}
+
+.collective-text h1 {
   text-align: center;
   margin-top: 60px;
 }
-.go {
+
+.collective-text p {
+  text-align: center;
+  margin-top: 60px;
+  line-height: 30px;
+}
+
+.collective-btn {
   width: 170px;
   height: 70px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  margin: 60px auto 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   gap: 10px;
-  margin-left: 75px;
-  border-radius: 8px;
-  padding: 20px 40px;
 }
-.nodiv {
+
+.collective-image {
   width: 284px;
-  height: 198px;
-  position: absolute;
-  top: 2850px;
-  left: 15px;
+  height: 188px;
+  margin: 60px auto 0;
 }
-.fourth {
-  height: 860px;
-  background-color: var(--white-space);
-  background-image: url(./public/images/Element.png);
+/*  END OF EXTENSIONS STYLING */
+
+/* BEGINNING OF  CUSTOMISE STYLING*/
+.customise {
+  width: 100%;
+  height: 820px;
+  background-color: var(--white);
 }
-.outsider {
+
+.customise-top-image {
   width: 288px;
-  height: 198px;
-  position: absolute;
-  top: 3240px;
-  left: 15px;
+  height: 214px;
+  margin: 40px auto 0;
 }
-.pluggins {
-  position: relative;
-  top: 375px;
+
+.customise-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.customise-text {
   text-align: center;
+  margin-top: 110px;
 }
-.pluggins h1 {
+.customise-text h1 {
   color: black;
 }
-.pluggins p {
+.customise-text p {
   color: black;
-  line-height: 23px;
 }
-.goes {
+.customise-button {
+  width: 175px;
+  height: 60px;
+  border-radius: 6px;
+  padding: 20px 40px;
+  margin: 40px auto 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   gap: 10px;
-  margin-left: 75px;
+}
+/*  END OF CUSTOMISE STYLING */
+
+/* BEGINNING OF SUBSCRIPTION STYLING */
+.subscription {
+  width: 100%;
+  height: 1225px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-text {
+  text-align: center;
+}
+
+.sub-text h1 {
+  color: black;
+  font-size: 36px;
+}
+
+.sub-text p {
+  color: black;
+}
+.sub-price-board {
+  width: 289px;
+  height: 642px;
+}
+.sub-circles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.one {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #4f9cf9;
+}
+.two {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #043873;
+}
+.three {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #4f9cf9;
+}
+/* END OF SUBSCRIPTION STYLING */
+
+/* BEGINNING OF REMOTE WORK STYLING */
+.remote-work{
+  width: 100%;
+  height: 766px;
+  margin-top: 90px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.remote-content{
+  width: 288px;
+  height: 526px;
+}
+.remote-btn{
+  width: 193px;
+  height: 70px;
   border-radius: 8px;
   padding: 20px 40px;
-  position: relative;
-  top: 420px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }

@@ -9,16 +9,17 @@
   <body>
     <!-- header -->
     <header>
-      <!-- nav-logo -->
-      <nav>
-        <div class="logo">
-          <img src="./public/icons/Logo Icon.png" alt="logo icon" />
-          <h1>WhitePace</h1>
-        </div>
-        <div><img src="./public/icons/Btn.png" alt="Btn" /></div>
-      </nav>
+      <!-- logo -->
+      <div class="logo">
+        <img src="./public/icons/Logo Icon.png" alt="logo icon" />
+        <h1>Whitespace</h1>
+      </div>
+      <!-- button -->
+      <div class="menu-hamburger">
+        <img src="./public/icons/Btn.png" alt="hamburger" />
+      </div>
     </header>
-    <!-- 1st section  -->
+    <!-- hero section  -->
     <section class="hero">
       <div class="hero-heading">
         <div class="hero-center">
@@ -29,153 +30,253 @@
             everyday tasks
           </p>
         </div>
-        <div class="but">
-          <button class="button">Try Taskey Free <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-move-right preview-icon"
-              >
-                <path d="M18 8L22 12L18 16" />
-                <path d="M2 12H22" /></svg</button> 
-        </div>
+        <button class="hero-button">
+          <span>Try Taskey Free</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-right preview-icon"
+          >
+            <path d="M18 8L22 12L18 16" />
+            <path d="M2 12H22" />
+          </svg>
+        </button>
         <div class="imgbox">
-          <img class="img" src="./public/images/serious.webp" alt="seious" />
+          <img
+            class="hero-image"
+            src="./public/images/serious.webp"
+            alt="serious"
+          />
         </div>
       </div>
     </section>
-    <!-- second section  -->
-    <section class="hero-next">
-      <div class="advert">
-        <div class="sponsor">
-          <div class="talk">
-            <h1 class="proj">Project Management</h1>
-            <p class="proje">
-              Images, videos, PDFs and audio <br />files are supported. Create
-              math <br />
-              expressions and diagrams directly <br />from the app. Take photos
-              with the <br />
-              mobile app and save them to a <br />
-              note.
+    <!-- MAAGEMENT SECTION  -->
+    <section class="management">
+      <div class="management-container">
+        <div class="management-details">
+          <div class="management-text">
+            <h1 class="management-heading">Project Management</h1>
+            <p class="management-paragraph">
+              Images, videos, PDFs and audio files are supported. Create math
+              expressions and diagrams directly from the app. Take photos with
+              the mobile app and save them to a note.
             </p>
           </div>
-          <button class="start">Get Started<svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-move-right preview-icon"
-              >
-                <path d="M18 8L22 12L18 16" />
-                <path d="M2 12H22" /></svg</button>
+          <button class="management-btn">
+            <span>Get Started</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-move-right preview-icon"
+            >
+              <path d="M18 8L22 12L18 16" />
+              <path d="M2 12H22" />
+            </svg>
+          </button>
         </div>
-        <img src="./public/images/wierdo.jfif" alt="weirdo" class="huh" />
-      </div>
-      <br />
-      <div class="coo">
-        <div class="coo-text">
-          <h1 class="work">Work together</h1>
-          <p class="support">
-            With whitepace, share your notes <br />with your colleagues and
-            <br />
-            collaborate on them. You can also publish a note to the internet and
-            <br />
-            share the URL with others.
-          </p>
+        <div class="management-imagecontainer">
+          <img
+            class="management-image"
+            src="./public/images/wierdo.jfif"
+            alt="weirdo"
+          />
         </div>
-        <button class="tyr">Try it now <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-move-right preview-icon"
-              >
-                <path d="M18 8L22 12L18 16" />
-                <path d="M2 12H22" /></svg</button>
-        <img
-          src="./public/images/Work Together Image.png"
-          alt="togetherness"
-          class="circle"
-        />
       </div>
+      <!-- END OF MANAGEMENT SECTION -->
+
+      <!-- CO-OPERATION SECTION -->
+      <section class="cooperation">
+        <div class="co-container">
+          <div class="co-details">
+            <h1 class="work">Work together</h1>
+            <p class="support">
+              With whitepace, share your notes <br />with your colleagues and
+              <br />
+              collaborate on them. You can also publish a note to the internet
+              and
+              <br />
+              share the URL with others.
+            </p>
+          </div>
+          <button class="co-button">
+            Try it now
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-move-right preview-icon"
+            >
+              <path d="M18 8L22 12L18 16" />
+              <path d="M2 12H22" />
+            </svg>
+          </button>
+          <div class="co-imageholder">
+            <img
+              src="./public/images/Work Together Image.png"
+              alt="togetherness"
+              class="co-image"
+            />
+          </div>
+        </div>
+      </section>
     </section>
-    <!-- third section  -->
-    <section class="third">
+    <!-- END OF CO-OPERATION CENTER -->
+
+    <!-- EXTENSIONS SECTION -->
+    <section class="extension">
       <div class="collective">
-        <div class="use">
-          <h1 class="as">
+        <div class="collective-text">
+          <h1>
             Use as <br />
             Extension
           </h1>
-          <p class="app">
+          <p>
             Customise the app with plugins, <br />
             custom themes and multiple text <br />
             editors (Rich Text or Markdown). <br />
             Or create your own scripts and <br />
             plugins using the Extension API.
           </p>
-          <button class="go">Lets Go <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-move-right preview-icon"
-              >
-                <path d="M18 8L22 12L18 16" />
-                <path d="M2 12H22" /></svg</button>
         </div>
+        <button class="collective-btn">
+          Lets Go
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-right preview-icon"
+          >
+            <path d="M18 8L22 12L18 16" />
+            <path d="M2 12H22" />
+          </svg>
+        </button>
       </div>
-      <img src="./public/images/real.jpg" alt="real" class="nodiv" />
+      <img src="./public/images/real.jpg" alt="real" class="collective-image" />
     </section>
-    <br />
-    <section class="fourth">
-      <img src="./public/images/hottie.webp" alt="hottie" class="outsider" />
+    <!-- END OF ETENSIONS SECTION -->
 
-      <div class="need">
-        <div class="pluggins">
+    <!-- BEGINNING OF CUSTOMISING SECTION -->
+    <section class="customise">
+      <div class="customise-top-image">
+        <img
+          src="./public/images/hottie.webp"
+          alt="hottie"
+          class="customise-top-image"
+        />
+      </div>
+
+      <div class="customise-content">
+        <div class="customise-text">
           <h1>Customise it to your needs</h1>
           <p>
-            Customise the app with <br> plugins, custom themes and <br>multiple text
-            editors (Rich Text <br>or Markdown). Or create your own <br> scripts and
-            plugins using <br>the Extension API.
+            Customise the app with <br />
+            plugins, custom themes and <br />multiple text editors (Rich Text
+            <br />or Markdown). Or create your own <br />
+            scripts and plugins using <br />the Extension API.
           </p>
         </div>
-        <button class="goes">
-          Let Go <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-move-right preview-icon"
-              >
-                <path d="M18 8L22 12L18 16" />
-                <path d="M2 12H22" /></svg
+        <button class="customise-button">
+          <span>Let's Go</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-right preview-icon"
+          >
+            <path d="M18 8L22 12L18 16" />
+            <path d="M2 12H22" />
+          </svg>
+        </button>
+      </div>
+    </section>
+    <!-- END OF CUSTOMISING SECTION -->
+
+    <!-- BEGINNING OF SUBSCRIPTION SECTION -->
+    <section class="subscription">
+      <div class="sub-text">
+        <h1>Choose Your Plan</h1>
+        <p>
+          Whether you want to get organized, keep your personal life on track,
+          or boost workplace productivity, Evernote has the right plan for you.
+        </p>
+      </div>
+
+      <div class="sub-image-container">
+        <img
+          class="sub-Price-board"
+          src="./public/images/Price-board.png"
+          alt="price board"
+        />
+      </div>
+      <div class="sub-circles">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    </section>
+    <!-- END OF SUBSCRIPTION SECTION -->
+
+    <!-- BEGINNIG OF REMOTE WORK SECTION -->
+    <section class="remote-work">
+      <div class="remote-content">
+        <div>
+          <h1>Your work everywhere you are</h1>
+          <p>
+            Access your notes from your computer, phone or tablet by
+            synchronising with various services, including whitepace, Dropbox
+            and OneDrive. The app is available on Windows, macOS, Linux, Android
+            and iOS. A terminal app is also available!
+          </p>
+        </div>
+        <button class="remote-btn">
+          Try Taskey
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-right preview-icon"
+          >
+            <path d="M18 8L22 12L18 16" />
+            <path d="M2 12H22" />
+          </svg>
         </button>
       </div>
     </section>
