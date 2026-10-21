@@ -9,6 +9,7 @@
   --button-color: #4f9cf9;
   --white: #ffffff;
   --secondary-white-space: #b4b4b4;
+  --second-p-color: #212529;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* Global Start */
+/* GLOBAL START */
 
 h1 {
   font-size: 36px;
@@ -38,7 +39,7 @@ button {
   font-size: 14px;
 }
 
-/* Global End */
+/*GLOBAL END */
 
 header {
   display: flex;
@@ -56,6 +57,8 @@ header {
 .logo h1 {
   font-size: 19.64px;
 }
+
+/* BEGINNING OF HERO STYLING */
 
 .hero {
   height: 720px;
@@ -354,6 +357,53 @@ header {
   border-radius: 8px;
   padding: 20px 40px;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+/* END OF REMOTE WORK STYLING */
+
+/* BEGINNING OF SECRITY STYLING */
+.security{
+  width: 100%;
+  height: 831px;
+  background-color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.security-img{
+  margin: -900px auto 0;
+}
+
+.security-text{
+  margin-top: 48px;
+  text-align: center;
+}
+
+.security-text h1{
+  color: var(--second-p-color);
+  font-weight: 700;
+}
+
+.security-text p{
+  color: var(--second-p-color);
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.security-btn{
+  width: 193px;
+  height: 70px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  margin: 40px auto 0;
 
   display: flex;
   justify-content: center;
